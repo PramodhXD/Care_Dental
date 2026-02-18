@@ -39,18 +39,27 @@ export default function Contact() {
             <p className="text-gray-700 mb-2">
               Phone:
             </p>
-            <p className="text-blue-600 font-medium">
-              08644-223232<br />
-              91602 23232<br />
-              99499 48094
-            </p>
+            <div className="space-y-1 text-blue-600 font-medium">
+              <a href="tel:08644223232" className="block hover:underline">
+                08644-223232
+              </a>
+              <a href="tel:9160223232" className="block hover:underline">
+                91602 23232
+              </a>
+              <a href="tel:9949948094" className="block hover:underline">
+                99499 48094
+              </a>
+            </div>
 
             <p className="mt-4 text-gray-700">
               Email:
             </p>
-            <p className="text-blue-600 font-medium">
+            <a
+              href="mailto:caredentaltenali@gmail.com"
+              className="text-blue-600 font-medium hover:underline"
+            >
               caredentaltenali@gmail.com
-            </p>
+            </a>
           </div>
 
           {/* Timings */}

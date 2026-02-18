@@ -48,10 +48,10 @@ export default function Header() {
         {/* RIGHT ACTIONS */}
         <div className="hidden md:flex items-center gap-5">
           <a
-            href="tel:+91XXXXXXXXXX"
+            href="tel:+919160223232"
             className="text-sm font-medium text-gray-700 hover:text-[#0096D6]"
           >
-            📞 Call
+            Call
           </a>
 
           <Link
@@ -106,3 +106,4 @@ export default function Header() {
     </header>
   );
 }
+

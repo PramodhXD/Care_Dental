@@ -16,6 +16,7 @@ export default function FloatingActions() {
       <a
         href="https://wa.me/919160223232"
         target="_blank"
+        rel="noopener noreferrer"
         className="rounded-full bg-green-500 p-3 text-white shadow-lg transition hover:bg-green-600 sm:p-4"
         aria-label="WhatsApp Care Dental"
       >
@@ -24,3 +25,4 @@ export default function FloatingActions() {
     </div>
   );
 }
+
