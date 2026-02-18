@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300">
@@ -60,6 +62,14 @@ export default function Footer() {
 
         <div className="mt-12 border-t border-gray-700 pt-6 text-center text-sm">
           &copy; {new Date().getFullYear()} Care Dental. All rights reserved.
+          <div className="mt-3 flex items-center justify-center gap-4 text-xs text-gray-400">
+            <Link href="/privacy-policy" className="hover:text-white hover:underline">
+              Privacy Policy
+            </Link>
+            <Link href="/terms" className="hover:text-white hover:underline">
+              Terms and Conditions
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

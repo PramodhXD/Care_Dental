@@ -15,7 +15,7 @@ export default function Header() {
         {/* LOGO */}
         <Link href="#home" className="flex items-center gap-2">
           <Image
-            src="/images/care-dental-logo.png"
+            src="/images/care-dental-logo.webp"
             alt="Care Dental"
             width={34}
             height={34}

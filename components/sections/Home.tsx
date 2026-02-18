@@ -146,10 +146,11 @@ export default function HomeSection() {
             className="relative flex h-[240px] w-[240px] items-center justify-center sm:h-[320px] sm:w-[320px] lg:h-[420px] lg:w-[420px] lg:-translate-y-10"
           >
             <Image
-              src="/images/care-dental-logo.png"
+              src="/images/care-dental-logo.webp"
               alt="Care Dental Logo"
               width={400}
               height={400}
+              quality={80}
               className="opacity-95"
             />
           </motion.div>

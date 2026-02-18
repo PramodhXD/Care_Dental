@@ -64,9 +64,11 @@ export default function DoctorsSection() {
             <div className="relative w-full h-full p-6">
               <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-inner">
                 <Image
-                  src="/images/doctors/our-doctors.jpg"
+                  src="/images/doctors/our-doctors.webp"
                   alt="Care Dental Doctors"
                   fill
+                  sizes="(max-width: 1023px) 100vw, 55vw"
+                  quality={78}
                   className="object-contain"
                   priority
                 />

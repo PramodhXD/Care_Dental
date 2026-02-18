@@ -10,11 +10,11 @@ import { FiX } from "react-icons/fi";
 import "swiper/css";
 
 const clinicImages = [
-  "/images/clinic/clinic-1.jpg",
-  "/images/clinic/clinic-2.jpg",
-  "/images/clinic/clinic-3.jpg",
-  "/images/clinic/clinic-4.jpg",
-  "/images/clinic/clinic-5.jpg",
+  "/images/clinic/clinic-1.webp",
+  "/images/clinic/clinic-2.webp",
+  "/images/clinic/clinic-3.webp",
+  "/images/clinic/clinic-4.webp",
+  "/images/clinic/clinic-5.webp",
 ];
 
 export default function ClinicGallery() {
@@ -72,6 +72,8 @@ export default function ClinicGallery() {
                   alt={`Clinic Image ${index + 1}`}
                   width={700}
                   height={500}
+                  sizes="(max-width: 639px) 92vw, (max-width: 1023px) 48vw, 32vw"
+                  quality={75}
                   className="h-[220px] w-full object-cover transition-transform duration-700 group-hover:scale-110 sm:h-[280px]"
                 />
               </motion.div>
@@ -109,6 +111,8 @@ export default function ClinicGallery() {
                 alt="Clinic Full View"
                 width={1200}
                 height={800}
+                sizes="100vw"
+                quality={80}
                 className="rounded-xl object-contain w-full max-h-[80vh] bg-black"
               />
             </motion.div>
