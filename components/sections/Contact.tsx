@@ -2,22 +2,22 @@ import Map from "./Map";
 
 export default function Contact() {
   return (
-    <section id="contact" className="bg-gray-50 py-20">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="contact" className="bg-gray-50 py-16 sm:py-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
         {/* Heading */}
-        <div className="text-center mb-14">
-          <h2 className="text-4xl font-bold text-gray-900">
+        <div className="mb-10 text-center sm:mb-14">
+          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
             Contact Us
           </h2>
-          <p className="mt-4 text-lg text-gray-600">
+          <p className="mt-4 text-base text-gray-600 sm:text-lg">
             We’re here to help you with expert dental care in Tenali
           </p>
         </div>
 
         {/* Info Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-3 md:gap-8">
           {/* Address */}
-          <div className="bg-white rounded-xl shadow-md p-6">
+          <div className="rounded-xl bg-white p-5 shadow-md sm:p-6">
             <h3 className="text-xl font-semibold text-blue-700 mb-4">
               Address
             </h3>
@@ -32,7 +32,7 @@ export default function Contact() {
           </div>
 
           {/* Contact */}
-          <div className="bg-white rounded-xl shadow-md p-6">
+          <div className="rounded-xl bg-white p-5 shadow-md sm:p-6">
             <h3 className="text-xl font-semibold text-blue-700 mb-4">
               Contact
             </h3>
@@ -54,7 +54,7 @@ export default function Contact() {
           </div>
 
           {/* Timings */}
-          <div className="bg-white rounded-xl shadow-md p-6">
+          <div className="rounded-xl bg-white p-5 shadow-md sm:p-6">
             <h3 className="text-xl font-semibold text-blue-700 mb-4">
               Clinic Timings
             </h3>
@@ -71,7 +71,7 @@ export default function Contact() {
         </div>
 
         {/* Google Map */}
-        <div className="mt-16">
+        <div className="mt-10 sm:mt-16">
           <Map />
         </div>
       </div>

@@ -2,16 +2,16 @@ import { testimonials } from "@/data/testimonials";
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="py-20 bg-[#f8fbff]">
-      <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-[#1e2a78]">
+    <section id="testimonials" className="bg-[#f8fbff] py-16 sm:py-20">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <h2 className="text-center text-3xl font-bold text-[#1e2a78]">
           What Our Patients Say
         </h2>
-        <p className="text-center text-gray-600 mt-3">
+        <p className="mt-3 text-center text-sm text-gray-600 sm:text-base">
           Trusted by hundreds of happy patients in Tenali
         </p>
 
-        <div className="grid md:grid-cols-3 gap-6 mt-12">
+        <div className="mt-8 grid gap-4 sm:mt-12 sm:gap-6 md:grid-cols-3">
           {testimonials.map((t, i) => (
             <div
               key={i}

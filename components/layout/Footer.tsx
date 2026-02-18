@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300">
-      <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-10">
 
           {/* Clinic Info */}
           <div>

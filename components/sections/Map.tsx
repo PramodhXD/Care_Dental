@@ -2,7 +2,7 @@
 
 export default function Map() {
   return (
-    <div className="w-full h-[320px] rounded-xl overflow-hidden border">
+    <div className="h-[260px] w-full overflow-hidden rounded-xl border sm:h-[320px]">
       <iframe
         title="Care Dental Location"
         src="https://www.google.com/maps?q=Care+Multi+Speciality+Dental+Hospital+Tenali&output=embed"

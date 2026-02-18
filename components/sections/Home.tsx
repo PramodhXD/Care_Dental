@@ -51,18 +51,18 @@ export default function HomeSection() {
       className="scroll-mt-16 relative overflow-hidden bg-gradient-to-br from-[#F4FCFF] via-white to-[#F3FAF6]"
     >
       {/* BACKGROUND BLOBS */}
-      <div className="absolute -top-48 -right-48 h-[520px] w-[520px] rounded-full bg-[#0096D6]/15 blur-2xl z-0" />
-      <div className="absolute -bottom-48 -left-48 h-[440px] w-[440px] rounded-full bg-[#8BC34A]/15 blur-2xl z-0" />
+      <div className="absolute -top-48 -right-48 z-0 h-[360px] w-[360px] rounded-full bg-[#0096D6]/15 blur-2xl sm:h-[520px] sm:w-[520px]" />
+      <div className="absolute -bottom-48 -left-48 z-0 h-[300px] w-[300px] rounded-full bg-[#8BC34A]/15 blur-2xl sm:h-[440px] sm:w-[440px]" />
 
       {/* CONTENT */}
-      <div className="relative z-10 mx-auto max-w-7xl px-6 pt-14 pb-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+      <div className="relative z-10 mx-auto grid max-w-7xl grid-cols-1 items-start gap-10 px-4 pb-12 pt-10 sm:px-6 sm:pb-16 sm:pt-14 lg:grid-cols-2 lg:gap-12">
 
         {/* LEFT CONTENT */}
         <motion.div initial="hidden" animate="visible" variants={stagger}>
           {/* MAIN HEADING */}
           <motion.h1
             variants={fadeUp}
-            className="text-4xl md:text-5xl lg:text-[56px] font-semibold leading-tight text-[#2E3192]"
+            className="text-3xl font-semibold leading-tight text-[#2E3192] sm:text-4xl md:text-5xl lg:text-[56px]"
           >
             Care Multi Speciality
             <br />
@@ -72,7 +72,7 @@ export default function HomeSection() {
           {/* SUB HEADING */}
           <motion.p
             variants={fadeUp}
-            className="mt-4 text-lg md:text-xl font-medium text-[#0096D6]"
+            className="mt-4 text-base font-medium text-[#0096D6] sm:text-lg md:text-xl"
           >
             Advanced dental care with compassion, safety, and precision.
           </motion.p>
@@ -80,7 +80,7 @@ export default function HomeSection() {
           {/* DESCRIPTION */}
           <motion.p
             variants={fadeUp}
-            className="mt-6 text-base md:text-lg text-gray-700 max-w-xl leading-relaxed"
+            className="mt-5 max-w-xl text-sm leading-relaxed text-gray-700 sm:mt-6 sm:text-base md:text-lg"
           >
             Care Dental is a multi speciality dental hospital in Tenali offering
             complete oral healthcare under one roof. We follow strict hygiene
@@ -95,7 +95,7 @@ export default function HomeSection() {
           {/* KEY HIGHLIGHTS */}
           <motion.div
             variants={stagger}
-            className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-10 text-gray-800 font-medium"
+            className="mt-7 grid grid-cols-1 gap-x-8 gap-y-3 text-sm font-medium text-gray-800 sm:mt-8 sm:grid-cols-2 sm:gap-x-10 sm:gap-y-4 sm:text-base"
           >
             {[
               "Advanced Dental Equipment & Technology",
@@ -121,7 +121,7 @@ export default function HomeSection() {
           <motion.div variants={scaleIn} className="mt-10">
             <Link
               href="#contact"
-              className="inline-flex items-center gap-3 rounded-full bg-[#0096D6] px-10 py-4 text-white font-semibold shadow-md hover:bg-[#007bb0] transition"
+              className="inline-flex items-center gap-3 rounded-full bg-[#0096D6] px-7 py-3 text-sm font-semibold text-white shadow-md transition hover:bg-[#007bb0] sm:px-10 sm:py-4 sm:text-base"
             >
               Book a Dental Consultation →
             </Link>
@@ -143,7 +143,7 @@ export default function HomeSection() {
               repeatType: "mirror",
               ease: MOTION.ease,
             }}
-            className="relative w-[420px] h-[420px] flex items-center justify-center -translate-y-10"
+            className="relative flex h-[240px] w-[240px] items-center justify-center sm:h-[320px] sm:w-[320px] lg:h-[420px] lg:w-[420px] lg:-translate-y-10"
           >
             <Image
               src="/images/care-dental-logo.png"

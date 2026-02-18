@@ -20,9 +20,9 @@ export default function DoctorsSection() {
   return (
     <section
       id="doctors"
-      className="scroll-mt-16 py-24 bg-gradient-to-b from-[#F6FAFF] to-white"
+      className="scroll-mt-16 bg-gradient-to-b from-[#F6FAFF] to-white py-16 sm:py-20 lg:py-24"
     >
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
 
         {/* SECTION HEADER */}
         <motion.div
@@ -30,7 +30,7 @@ export default function DoctorsSection() {
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeUp}
-          className="text-center mb-18"
+          className="mb-12 text-center sm:mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-semibold text-[#2E3192] tracking-tight">
             Our Dental Specialists
@@ -51,7 +51,7 @@ export default function DoctorsSection() {
           viewport={{ once: true }}
           variants={fadeUp}
           className="
-            relative bg-white rounded-3xl
+            relative rounded-3xl bg-white
             shadow-[0_20px_40px_-20px_rgba(46,49,146,0.25)]
             border border-[#E6EEFF]
             overflow-hidden
@@ -60,7 +60,7 @@ export default function DoctorsSection() {
           "
         >
           {/* IMAGE FRAME */}
-          <div className="relative h-[400px] lg:h-[440px] bg-gradient-to-br from-[#F1F6FF] to-[#FAFCFF] flex items-center justify-center">
+          <div className="relative flex h-[260px] items-center justify-center bg-gradient-to-br from-[#F1F6FF] to-[#FAFCFF] sm:h-[340px] lg:h-[440px]">
             <div className="relative w-full h-full p-6">
               <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-inner">
                 <Image
@@ -75,8 +75,8 @@ export default function DoctorsSection() {
           </div>
 
           {/* TEXT CONTENT */}
-          <div className="p-8 lg:p-14 flex flex-col justify-center">
-            <h3 className="text-2xl font-semibold text-[#2E3192]">
+          <div className="flex flex-col justify-center p-5 sm:p-8 lg:p-14">
+            <h3 className="text-xl font-semibold text-[#2E3192] sm:text-2xl">
               Expert Care You Can Trust
             </h3>
 

@@ -26,8 +26,8 @@ export default function ClinicGallery() {
   }, [selectedImage]);
 
   return (
-    <section id="gallery" className="py-20 bg-white text-black">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="gallery" className="bg-white py-16 text-black sm:py-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
 
         {/* TITLE */}
         <motion.div
@@ -35,12 +35,12 @@ export default function ClinicGallery() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="text-center mb-14"
+          className="mb-10 text-center sm:mb-14"
         >
-          <h2 className="text-4xl font-bold">
+          <h2 className="text-3xl font-bold sm:text-4xl">
             Our Clinic Infrastructure
           </h2>
-          <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+          <p className="mx-auto mt-4 max-w-2xl text-sm text-gray-600 sm:text-base">
             Modern equipment, hygienic environment, and world-class dental care facilities
           </p>
         </motion.div>
@@ -50,11 +50,11 @@ export default function ClinicGallery() {
           modules={[Autoplay]}
           autoplay={{ delay: 2800, disableOnInteraction: false }}
           loop
-          spaceBetween={28}
+          spaceBetween={16}
           breakpoints={{
-            0: { slidesPerView: 1 },
+            0: { slidesPerView: 1.05 },
             640: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
+            1024: { slidesPerView: 3, spaceBetween: 28 },
           }}
         >
           {clinicImages.map((src, index) => (
@@ -72,7 +72,7 @@ export default function ClinicGallery() {
                   alt={`Clinic Image ${index + 1}`}
                   width={700}
                   height={500}
-                  className="object-cover w-full h-[280px] transition-transform duration-700 group-hover:scale-110"
+                  className="h-[220px] w-full object-cover transition-transform duration-700 group-hover:scale-110 sm:h-[280px]"
                 />
               </motion.div>
             </SwiperSlide>

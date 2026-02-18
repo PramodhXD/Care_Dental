@@ -1,23 +1,23 @@
 export default function WhyChooseUsSection() {
   return (
-    <section id="why-choose-us" className="bg-[#F9FCFF] py-24">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="why-choose-us" className="bg-[#F9FCFF] py-16 sm:py-20 lg:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
 
         {/* SECTION HEADER */}
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-4xl font-semibold text-[#2E3192]">
+          <h2 className="text-3xl font-semibold text-[#2E3192] sm:text-4xl">
             Why Choose Care Dental
           </h2>
-          <p className="mt-4 text-lg text-gray-700">
+          <p className="mt-4 text-base text-gray-700 sm:text-lg">
             Trusted multi speciality dental care backed by experience,
             expertise, and a commitment to patient safety.
           </p>
         </div>
 
         {/* HIGHLIGHTS GRID */}
-        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="mt-10 grid grid-cols-1 gap-6 sm:mt-12 sm:grid-cols-2 sm:gap-8 lg:mt-16 lg:grid-cols-3 lg:gap-10">
 
-          <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+          <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm sm:p-8">
             <h3 className="text-xl font-semibold text-[#0096D6]">
               10+ Years of Experience
             </h3>
@@ -27,7 +27,7 @@ export default function WhyChooseUsSection() {
             </p>
           </div>
 
-          <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+          <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm sm:p-8">
             <h3 className="text-xl font-semibold text-[#8BC34A]">
               Multi Speciality Hospital
             </h3>
@@ -37,7 +37,7 @@ export default function WhyChooseUsSection() {
             </p>
           </div>
 
-          <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+          <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm sm:p-8">
             <h3 className="text-xl font-semibold text-[#0096D6]">
               Facial Trauma & Implant Center
             </h3>
@@ -47,7 +47,7 @@ export default function WhyChooseUsSection() {
             </p>
           </div>
 
-          <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+          <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm sm:p-8">
             <h3 className="text-xl font-semibold text-[#8BC34A]">
               Experienced Specialists
             </h3>
@@ -57,7 +57,7 @@ export default function WhyChooseUsSection() {
             </p>
           </div>
 
-          <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+          <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm sm:p-8">
             <h3 className="text-xl font-semibold text-[#0096D6]">
               Advanced Technology
             </h3>
@@ -67,7 +67,7 @@ export default function WhyChooseUsSection() {
             </p>
           </div>
 
-          <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+          <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm sm:p-8">
             <h3 className="text-xl font-semibold text-[#8BC34A]">
               Hygiene & Patient Safety
             </h3>

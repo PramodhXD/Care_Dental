@@ -85,9 +85,9 @@ export default function ServicesSection() {
   return (
     <section
       id="services"
-      className="scroll-mt-16 py-20 bg-white"
+      className="scroll-mt-16 bg-white py-16 sm:py-20"
     >
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
 
         {/* SECTION HEADER */}
         <motion.div
@@ -95,7 +95,7 @@ export default function ServicesSection() {
           whileInView="visible"
           viewport={{ once: true }}
           variants={stagger}
-          className="text-center mb-16"
+          className="mb-10 text-center sm:mb-16"
         >
           <motion.h2
             variants={fadeUp}
@@ -106,7 +106,7 @@ export default function ServicesSection() {
 
           <motion.p
             variants={fadeUp}
-            className="mt-4 text-gray-600 max-w-3xl mx-auto"
+            className="mx-auto mt-4 max-w-3xl text-sm text-gray-600 sm:text-base"
           >
             As a multispeciality dental hospital and facial trauma & implant
             center, we provide comprehensive dental, surgical, and rehabilitative
@@ -120,13 +120,13 @@ export default function ServicesSection() {
           whileInView="visible"
           viewport={{ once: true }}
           variants={stagger}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 lg:gap-8"
         >
           {services.map((service) => (
             <motion.div
               key={service.title}
               variants={fadeUp}
-              className="bg-[#F9FBFF] rounded-xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition"
+              className="rounded-xl border border-gray-100 bg-[#F9FBFF] p-5 shadow-sm transition hover:shadow-md sm:p-6"
             >
               <h3 className="text-lg font-semibold text-[#2E3192]">
                 {service.title}

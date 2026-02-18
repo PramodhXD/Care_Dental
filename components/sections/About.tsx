@@ -2,17 +2,17 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="relative bg-[#F9FCFF] py-24"
+      className="relative bg-[#F9FCFF] py-16 sm:py-20 lg:py-24"
     >
-      <div className="mx-auto max-w-7xl px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 items-start gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:gap-20">
 
         {/* LEFT CONTENT */}
         <div className="max-w-xl">
-          <h2 className="text-4xl font-semibold text-[#2E3192]">
+          <h2 className="text-3xl font-semibold text-[#2E3192] sm:text-4xl">
             About Care Dental
           </h2>
 
-          <p className="mt-6 text-lg text-gray-700 leading-relaxed">
+          <p className="mt-5 text-base leading-relaxed text-gray-700 sm:mt-6 sm:text-lg">
             Care Multi Speciality Dental Hospital is a trusted dental care
             center in Tenali, providing comprehensive dental and
             maxillofacial treatments since <strong>2015</strong>. As a
@@ -55,8 +55,8 @@ export default function AboutSection() {
           {/* Soft background glow */}
           <div className="absolute -inset-8 bg-gradient-to-br from-[#0096D6]/10 to-[#8BC34A]/10 blur-3xl rounded-3xl" />
 
-          <div className="relative bg-white rounded-2xl p-10 shadow-sm">
-            <h3 className="text-2xl font-semibold text-[#2E3192]">
+          <div className="relative rounded-2xl bg-white p-6 shadow-sm sm:p-8 lg:p-10">
+            <h3 className="text-xl font-semibold text-[#2E3192] sm:text-2xl">
               Our Mission
             </h3>
             <p className="mt-4 text-gray-700 leading-relaxed">
@@ -65,7 +65,7 @@ export default function AboutSection() {
               patients maintain healthy, confident smiles for life.
             </p>
 
-            <h3 className="mt-10 text-2xl font-semibold text-[#2E3192]">
+            <h3 className="mt-8 text-xl font-semibold text-[#2E3192] sm:mt-10 sm:text-2xl">
               Our Vision
             </h3>
             <p className="mt-4 text-gray-700 leading-relaxed">
